@@ -1,4 +1,6 @@
 #!/bin/bash
 hodor=("Hodor" "HODOR!" "Hodor...hodor" "HODOR HODOR HODOR!" "Hodor?")
-hodor=${hodor[$RANDOM % ${#hodor[@]}]}
-echo $hodor
+for ((n=0;n<${1:-10};n++)); do 
+  echo ${hodor[$RANDOM % ${#hodor[@]}]}
+  sleep 1
+done
