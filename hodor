@@ -1,4 +1,4 @@
 #!/bin/bash
-hodor=("Hodor" "HODOR!" "Hodor...hodor" "HODOR HODOR HODOR!")
+hodor=("Hodor" "HODOR!" "Hodor...hodor" "HODOR HODOR HODOR!" "Hodor?")
 hodor=${hodor[$RANDOM % ${#hodor[@]}]}
 echo $hodor
